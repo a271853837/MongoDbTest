@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MongoTest
 {
-    public class NormalMongoRepository<TDocument> : BaseMongoRepository<TDocument>, IMongoRepository<TDocument> where TDocument : class, IMongoDocument
+    public class NormalMongoRepository<TDocument> : BaseMongoDb<TDocument>, IMongoRepository<TDocument> where TDocument : class, IMongoDocument
     {
         public NormalMongoRepository(string dbName, string collectionName) : base(dbName, collectionName)
         {

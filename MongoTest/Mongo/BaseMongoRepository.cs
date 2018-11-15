@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace MongoTest
 {
-    public class BaseMongoRepository<TDocument>
+    public class BaseMongoDb<TDocument>
     {
         private string dbName;
         protected string collectionName;
-        public BaseMongoRepository(string dbName, string collectionName)
+        public BaseMongoDb(string dbName, string collectionName)
         {
             this.dbName = dbName;
             this.collectionName = collectionName;
